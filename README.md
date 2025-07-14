@@ -1,34 +1,36 @@
-## 1. Introduction  
-This document details an exciting project aimed at modernising Greenfield Academy's student information system through the implementation of a new database named student_management.  
-The project focuses on establishing a robust and secure database infrastructure capable of storing and managing critical information about students and teachers.  
-A key emphasis is placed on implementing stringent access controls, including user account creation, privilege management, and role-based access control, to ensure the confidentiality, integrity, and availability of sensitive educational data.  
-## 2. Aims
-- The primary aim of this project is to develop a secure and efficient database system for Greenfield Academy that supports the management of student and teacher information.  
-- To implement access control measures that safeguard sensitive educational data.
+### Practical Exercise:  
+Manage a Student Information System Database
+Greenfield Academy, a growing educational institution, has decided to modernise its student information system. The IT department is tasked with creating a new database called 'student_management' to store and manage information about students and teachers. As part of this initiative, they need to set up appropriate access controls to ensure data security and privacy.
+The database administrator will be working on:
+1. Creating the necessary database structure
+2. Setting up user accounts with varying levels of access
+3. Implementing and managing database privileges
+4. Creating and assigning roles for different types of users
 
+These tasks will help Greenfield Academy maintain the confidentiality and integrity of their student and teacher data while allowing appropriate access to authorised personnel.  \
+The lessons will guide the database administrator through the process of granting privileges, revoking them when necessary, and using roles to manage user permissions efficiently.
 
-## 3. Objectives
-The specific objectives of this project are:
+Lesson 1: GRANT Statement
+1. Create a new database called student_management.
+2. Create two tables in the database:
+•	Students table: Stores information about students (id, name, age, grade).USE student_management;
+•	Teachers table: Stores information about teachers (id, name, subject).
+3. Create a user named teacher_user without any initial privileges.
+4. Write a query to grant SELECT and INSERT privileges to teacher_user on the students table.
+5. Verify that teacher_user can now select and insert records in the students table but cannot delete or update any records.
 
-- To design and create the necessary database schema for student and teacher data.
+Lesson 2: REVOKE Statement
+1. Use the same database student_management.
+2. Create another user called admin_user.
+3. Grant all privileges (SELECT, INSERT, UPDATE, DELETE) on both tables (students and teachers) to admin_user.
+4. Verify that admin_user can perform all operations.
+5. Write a query to revoke the DELETE privilege from admin_user on the students table.
+6. Verify that admin_user can no longer delete records from the students table but can still insert, update, and select records. SELECT * FROM students;
 
-- To establish distinct user accounts with varying levels of access permissions.
+Lesson 3: Roles and Privileges
+1. Create a new role called student_role and assign it SELECT privileges on the students table.
+2. Create a new user student_user and assign them the student_role.
+3. Verify that student_user can only view the records in the students table but cannot make any changes.
+4. Modify the student_role to also include INSERT privileges on the students table.
+5. Verify that student_user can now insert new records but still cannot delete or update them.
 
-- To implement and manage database privileges effectively, granting and revoking access as required. 
-
-- To leverage database roles for streamlined management of user permissions.
-
-- To ensure that only authorised personnel can access and manipulate sensitive student and teacher data.  
-
-
-## 4. Problem Statement
-As Greenfield Academy expands, the risk of unauthorised access to student and teacher records increases. There is a need for a centralised, secure database system that supports different access levels for staff while ensuring confidentiality, integrity, and availability of the data.  
-The absence of a robust database infrastructure poses significant challenges in maintaining data confidentiality, integrity, and efficient access for authorised personnel. Specifically, there is a need to:  
-- Create a structured database to store student and teacher records. 
-- Define and enforce granular access controls to protect sensitive information.  
-- Provide different levels of access for various user types (e.g., teachers, administrators, students) to perform their respective tasks without compromising data security.  
-- Establish a flexible and scalable mechanism for managing user permissions that can adapt to future organisational needs.  
-- This project addresses these challenges by providing a structured approach to database creation, user management, and privilege control, thereby enhancing the overall security and operational efficiency of Greenfield Academy's information system. 
-
-## 5. Solution: Database Implementation and Access Control
-This section details the SQL commands and steps required to implement the student_management database, set up user accounts, and manage privileges using GRANT, REVOKE, and ROLES.  
