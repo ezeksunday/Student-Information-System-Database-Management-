@@ -1,4 +1,5 @@
-## Introduction
+
+## Introduction
 This document outlines a comprehensive project for modernising Greenfield Academy's student information system through the implementation of a new database named student_management.  
 The project focuses on establishing a robust and secure database infrastructure capable of storing and managing critical information about students and teachers.  
 A key emphasis is placed on implementing stringent access controls, including user account creation, privilege management, and role-based access control, to ensure the confidentiality, integrity, and availability of sensitive educational data.
@@ -27,4 +28,4 @@ The absence of a robust database infrastructure poses significant challenges in 
 - Provide custom calculation capabilities within the database for business logic.
 
 ## Solution: Database Implementation and Access Control
-This section outlines the SQL commands and steps necessary to implement the student_management database, set up user accounts, manage privileges using GRANT, REVOKE, and ROLES, and introduce advanced functionalities like Views, Stored Procedures, and User-Defined Functions. -- Uploaded as the source code "Codes.sql" --
+This section outlines the SQL commands and steps necessary to implement the student_management database, set up user accounts, manage privileges using GRANT, REVOKE, and ROLES, and introduce advanced functionalities like Views, Stored Procedures, and User-Defined Functions. **Uploaded as the source code "Codes.sql"**
