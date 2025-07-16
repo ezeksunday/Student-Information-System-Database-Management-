@@ -28,4 +28,5 @@ The absence of a robust database infrastructure poses significant challenges in 
 - Provide custom calculation capabilities within the database for business logic.
 
 ## Solution: Database Implementation and Access Control
-This section outlines the SQL commands and steps necessary to implement the student_management database, set up user accounts, manage privileges using GRANT, REVOKE, and ROLES, and introduce advanced functionalities like Views, Stored Procedures, and User-Defined Functions. **Uploaded as the source code "Codes.sql"**
+This section outlines the SQL commands and steps necessary to implement the student_management database, set up user accounts, manage privileges using GRANT, REVOKE, and ROLES, and introduce advanced functionalities like Views, Stored Procedures, and User-Defined Functions.  
+- **Uploaded as the source code "Codes.sql"**
